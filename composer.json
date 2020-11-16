@@ -1,0 +1,58 @@
+{
+    "name": "php-web-component/jquery",
+    "description": "PHP Web Component JQuery",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagus A Priambada",
+            "email": "iam.adty@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PWC\\": "core/",
+            "PWC\\Asset\\": "asset/",
+            "PWC\\Component\\JQuery\\": "src/"
+        }
+    },
+    "require": {
+        "php-web-component/asset": "dev-develop",
+        "php-web-component/html": "dev-develop"
+    },
+    "require-dev": {
+        "npm-asset/jquery": "1.12.4"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "path",
+            "url": "../core"
+        },
+        {
+            "type": "path",
+            "url": "../asset"
+        },
+        {
+            "type": "path",
+            "url": "../assets-manager"
+        },
+        {
+            "type": "path",
+            "url": "../cli"
+        },
+        {
+            "type": "path",
+            "url": "../util"
+        },
+        {
+            "type": "path",
+            "url": "../html"
+        }
+    ]
+}
