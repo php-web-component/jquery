@@ -1,6 +1,8 @@
 <?php namespace PWC\Asset;
 
-class JQuery extends \PWC\Asset
+use PWC\Asset;
+
+class JQuery extends Asset
 {
     public static $package = 'php-web-component/jquery';
     public static $name = 'Jquery';

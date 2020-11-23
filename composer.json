@@ -28,31 +28,14 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "http://localhost/satis"
+        },
+        {
+            "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "path",
-            "url": "../core"
-        },
-        {
-            "type": "path",
-            "url": "../asset"
-        },
-        {
-            "type": "path",
-            "url": "../assets-manager"
-        },
-        {
-            "type": "path",
-            "url": "../cli"
-        },
-        {
-            "type": "path",
-            "url": "../util"
-        },
-        {
-            "type": "path",
-            "url": "../html"
         }
-    ]
+    ],
+    "config": {
+        "secure-http": false
+    }
 }
