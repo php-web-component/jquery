@@ -19,23 +19,18 @@
         }
     },
     "require": {
+        "php-web-component/core": "dev-develop",
         "php-web-component/asset": "dev-develop",
         "php-web-component/html": "dev-develop"
     },
     "require-dev": {
-        "npm-asset/jquery": "1.12.4"
+        "npm-asset/jquery": "1.12.4",
+        "kint-php/kint": "^3.3"
     },
     "repositories": [
         {
             "type": "composer",
-            "url": "http://localhost/satis"
-        },
-        {
-            "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ],
-    "config": {
-        "secure-http": false
-    }
+    ]
 }
