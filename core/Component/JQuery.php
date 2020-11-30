@@ -17,6 +17,13 @@ class JQuery extends Component
     protected ?Body $body;
     protected ?Title $title;
 
+    protected function init()
+    {
+        parent::init();
+
+        Script::register(Asset::get('dir') . 'php-web-component/jquery/jquery.min.js');
+    }
+
     public function render(): string
     {
         return (string) ($this->html ?? Html::build(
@@ -27,7 +34,6 @@ class JQuery extends Component
             ))->withDecorators($this->_decorators),
             ($this->body ?? Body::build(
                 parent::render(),
-                Script::register(Asset::get('dir') . 'php-web-component/jquery/jquery.min.js'),
 
                 ...$this->_decorators->get(),
             ))->withDecorators($this->_decorators),
